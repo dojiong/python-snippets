@@ -31,7 +31,7 @@ class NameFilter(Filter):
 
 class PathFilter(Filter):
     def __init__(self, path):
-        self.name = path
+        self.path = path
 
     def is_bad(self, name, path):
         return path == self.path
